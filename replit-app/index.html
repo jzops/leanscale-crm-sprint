@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30-Day CRM Sprint | LeanScale</title>
+  <style>
+    :root {
+      --purple: #301934;
+      --lime: #E8FFCF;
+      --white: #FFFBFF;
+      --black: #000000;
+      --gray: #595959;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--black);
+      background: var(--white);
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    
+    /* Hero */
+    .hero {
+      padding: 80px 0;
+      text-align: center;
+    }
+    
+    .hero-badge {
+      display: inline-block;
+      background: var(--lime);
+      color: var(--purple);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--purple);
+      margin-bottom: 24px;
+      line-height: 1.1;
+    }
+    
+    .hero h1 span {
+      color: var(--gray);
+      text-decoration: line-through;
+    }
+    
+    .hero p {
+      font-size: 20px;
+      color: var(--gray);
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: var(--purple);
+      color: var(--white);
+      padding: 16px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(48, 25, 52, 0.3);
+    }
+    
+    .cta-subtext {
+      margin-top: 12px;
+      font-size: 14px;
+      color: var(--gray);
+    }
+    
+    /* Problem Section */
+    .problem {
+      background: var(--purple);
+      color: var(--white);
+      padding: 80px 0;
+    }
+    
+    .problem h2 {
+      font-size: 36px;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+    
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 32px;
+    }
+    
+    .problem-card {
+      background: rgba(255,255,255,0.1);
+      padding: 24px;
+      border-radius: 12px;
+    }
+    
+    .problem-card h3 {
+      font-size: 48px;
+      color: var(--lime);
+      margin-bottom: 8px;
+    }
+    
+    .problem-card p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+    
+    /* Solution Section */
+    .solution {
+      padding: 80px 0;
+    }
+    
+    .solution h2 {
+      font-size: 36px;
+      color: var(--purple);
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    
+    .solution > p {
+      text-align: center;
+      color: var(--gray);
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 48px;
+    }
+    
+    .timeline {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    
+    .timeline-week {
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+      padding: 32px 24px;
+      background: #f9f9f9;
+      border-radius: 12px;
+      position: relative;
+    }
+    
+    .timeline-week::after {
+      content: '→';
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: var(--lime);
+    }
+    
+    .timeline-week:last-child::after {
+      display: none;
+    }
+    
+    .timeline-week h3 {
+      color: var(--purple);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    
+    .timeline-week h4 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    
+    .timeline-week ul {
+      list-style: none;
+      font-size: 14px;
+      color: var(--gray);
+    }
+    
+    .timeline-week li {
+      margin-bottom: 4px;
+    }
+    
+    /* Offers Section */
+    .offers {
+      background: #f9f9f9;
+      padding: 80px 0;
+    }
+    
+    .offers h2 {
+      font-size: 36px;
+      color: var(--purple);
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    
+    .offer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+    }
+    
+    .offer-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+    
+    .offer-card.featured {
+      border: 3px solid var(--purple);
+      position: relative;
+    }
+    
+    .offer-card.featured::before {
+      content: 'Most Popular';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--purple);
+      color: var(--white);
+      padding: 4px 16px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    
+    .offer-card h3 {
+      font-size: 24px;
+      color: var(--purple);
+      margin-bottom: 8px;
+    }
+    
+    .offer-card .price {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    
+    .offer-card .duration {
+      color: var(--gray);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    
+    .offer-card ul {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+    
+    .offer-card li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 15px;
+    }
+    
+    .offer-card li:last-child {
+      border-bottom: none;
+    }
+    
+    .offer-card li::before {
+      content: '✓';
+      color: var(--purple);
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    
+    .guarantee-box {
+      background: var(--lime);
+      padding: 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 500;
+    }
+    
+    /* Social Proof */
+    .proof {
+      padding: 80px 0;
+      text-align: center;
+    }
+    
+    .proof h2 {
+      font-size: 36px;
+      color: var(--purple);
+      margin-bottom: 48px;
+    }
+    
+    .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 48px;
+      opacity: 0.6;
+      margin-bottom: 48px;
+    }
+    
+    .logos span {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--gray);
+    }
+    
+    .testimonial {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 32px;
+      background: #f9f9f9;
+      border-radius: 16px;
+    }
+    
+    .testimonial blockquote {
+      font-size: 20px;
+      font-style: italic;
+      margin-bottom: 16px;
+      color: var(--purple);
+    }
+    
+    .testimonial cite {
+      font-style: normal;
+      color: var(--gray);
+    }
+    
+    /* FAQ */
+    .faq {
+      background: var(--purple);
+      color: var(--white);
+      padding: 80px 0;
+    }
+    
+    .faq h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 32px;
+    }
+    
+    .faq-item h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: var(--lime);
+    }
+    
+    .faq-item p {
+      font-size: 15px;
+      opacity: 0.9;
+    }
+    
+    /* Final CTA */
+    .final-cta {
+      padding: 80px 0;
+      text-align: center;
+    }
+    
+    .final-cta h2 {
+      font-size: 42px;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+    
+    .final-cta p {
+      font-size: 18px;
+      color: var(--gray);
+      margin-bottom: 32px;
+    }
+    
+    /* Footer */
+    footer {
+      background: #f9f9f9;
+      padding: 32px 0;
+      text-align: center;
+      color: var(--gray);
+      font-size: 14px;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+      
+      .timeline-week::after {
+        display: none;
+      }
+      
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">Limited Slots Available</div>
+      <h1>30 Days to Pipeline.<br><span>Not 30 Weeks.</span></h1>
+      <p>Your CRM implementation shouldn't take longer than your free trial. We build working HubSpot and Salesforce systems in 30 days. Flat fee. Adoption guaranteed.</p>
+      <a href="#book" class="cta-button">Book Your Sprint →</a>
+      <p class="cta-subtext">Only 4 sprint slots per month</p>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="problem">
+    <div class="container">
+      <h2>The CRM Implementation Problem</h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <h3>6-18</h3>
+          <p>Months for the average enterprise CRM implementation</p>
+        </div>
+        <div class="problem-card">
+          <h3>43%</h3>
+          <p>Of CRM implementations fail to meet expectations</p>
+        </div>
+        <div class="problem-card">
+          <h3>$150K+</h3>
+          <p>Average cost with big consulting firms</p>
+        </div>
+        <div class="problem-card">
+          <h3>65%</h3>
+          <p>Of sales reps say their CRM is too complex to use</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section class="solution">
+    <div class="container">
+      <h2>The 30-Day Sprint</h2>
+      <p>We've done 50+ CRM implementations. Here's exactly what happens in yours.</p>
+      
+      <div class="timeline">
+        <div class="timeline-week">
+          <h3>Week 1</h3>
+          <h4>Foundation</h4>
+          <ul>
+            <li>Objects & fields</li>
+            <li>Permissions</li>
+            <li>Data import</li>
+          </ul>
+        </div>
+        <div class="timeline-week">
+          <h3>Week 2</h3>
+          <h4>Automation</h4>
+          <ul>
+            <li>Lead routing</li>
+            <li>Lead scoring</li>
+            <li>Workflows</li>
+          </ul>
+        </div>
+        <div class="timeline-week">
+          <h3>Week 3</h3>
+          <h4>Integration</h4>
+          <ul>
+            <li>Email & calendar</li>
+            <li>Slack alerts</li>
+            <li>Tool connections</li>
+          </ul>
+        </div>
+        <div class="timeline-week">
+          <h3>Week 4</h3>
+          <h4>Launch</h4>
+          <ul>
+            <li>Team training</li>
+            <li>Dashboards live</li>
+            <li>Go-live support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers -->
+  <section class="offers" id="book">
+    <div class="container">
+      <h2>Choose Your Sprint</h2>
+      <div class="offer-grid">
+        
+        <div class="offer-card">
+          <h3>30-Day Implementation</h3>
+          <div class="price">$25,000</div>
+          <div class="duration">Flat fee • 30 days</div>
+          <ul>
+            <li>HubSpot or Salesforce setup</li>
+            <li>Pipeline stages & deal properties</li>
+            <li>Lead scoring & routing</li>
+            <li>Core integrations (email, calendar, Slack)</li>
+            <li>Sales reporting dashboard</li>
+            <li>2 team training sessions</li>
+            <li>30 days Slack support</li>
+          </ul>
+          <div class="guarantee-box">
+            If your team isn't using it by Day 30, we keep working free.
+          </div>
+        </div>
+        
+        <div class="offer-card featured">
+          <h3>60-Day Migration</h3>
+          <div class="price">$35,000</div>
+          <div class="duration">Flat fee • 60 days</div>
+          <ul>
+            <li>Full data migration</li>
+            <li>Custom object mapping</li>
+            <li>Workflow & automation rebuild</li>
+            <li>Integration reconnection</li>
+            <li>Historical reporting preserved</li>
+            <li>Team retraining</li>
+            <li>Parallel run period</li>
+            <li>30 days Slack support</li>
+          </ul>
+          <div class="guarantee-box">
+            Zero data loss. Zero downtime. Guaranteed.
+          </div>
+        </div>
+        
+        <div class="offer-card">
+          <h3>The Guarantee Package</h3>
+          <div class="price">$30,000</div>
+          <div class="duration">Flat fee • 60 days</div>
+          <ul>
+            <li>Everything in 30-Day Sprint</li>
+            <li>30-day adoption monitoring</li>
+            <li>Daily login tracking</li>
+            <li>Adoption coaching for reps</li>
+            <li>Weekly reports to leadership</li>
+            <li>Extended Slack support</li>
+          </ul>
+          <div class="guarantee-box">
+            80%+ daily active usage by Day 60 — or full refund.
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof -->
+  <section class="proof">
+    <div class="container">
+      <h2>Trusted by High-Growth Teams</h2>
+      <div class="logos">
+        <span>Clio</span>
+        <span>Chainguard</span>
+        <span>Mistral</span>
+        <span>Fountain</span>
+        <span>SpyCloud</span>
+      </div>
+      <div class="testimonial">
+        <blockquote>"I can finally see what's happening. In two weeks, we went from spreadsheets to a real pipeline. LeanScale just gets it done."</blockquote>
+        <cite>— CEO, Series B Fintech</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <h2>Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>How is this so fast?</h3>
+          <p>We've done 50+ implementations. We don't need "discovery" to figure out best practices — we already know them. Day 1 is build day, not kickoff meeting day.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What if we need customizations?</h3>
+          <p>The sprint covers standard B2B sales process setup. Complex integrations or custom development can be added. We'll scope it upfront.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you work with HubSpot and Salesforce?</h3>
+          <p>Yes. Both. We're platform-agnostic and will help you choose the right one if you're not sure.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What does the guarantee actually mean?</h3>
+          <p>For the 30-Day Sprint: if your reps aren't logging in and using the system by Day 30, we keep working at no extra cost. For the Guarantee Package: 80%+ daily active usage by Day 60 or full refund.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How many sprints do you run at once?</h3>
+          <p>We cap it at 4 per month to maintain quality. If we're booked, you'll be first on the waitlist for next month.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What do we need to provide?</h3>
+          <p>Admin access to your CRM (or we help you set up a new one), your current data exports, and 1-2 hours per week of your team's time for feedback and training.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to stop waiting?</h2>
+      <p>Book a 15-minute call. We'll tell you exactly what we can deliver in 30 days.</p>
+      <a href="https://calendly.com/leanscale/crm-sprint" class="cta-button">Book Your Sprint Call →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 LeanScale. Embedded GTM Operations for B2B Tech.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
