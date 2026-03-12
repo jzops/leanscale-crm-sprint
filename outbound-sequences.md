@@ -8,7 +8,17 @@
 
 ---
 
-### Email 1: Day 0
+### Step 1: LinkedIn Connection Request — Day 0
+
+**Channel:** LinkedIn
+
+Send a connection request with a short, non-salesy note. No pitch.
+
+> {{first_name}}, congrats on the recent raise at {{company}} — exciting times. Would love to connect and follow the journey.
+
+---
+
+### Step 2: Email 1 — Day 1
 
 **Subject:** {{company}} + pipeline visibility
 
@@ -33,7 +43,17 @@ LeanScale
 
 ---
 
-### Email 2: Day 3
+### Step 3: LinkedIn Engagement — Day 3
+
+**Channel:** LinkedIn
+
+Engage authentically with their content. Like a recent post, or leave a thoughtful comment on something they've shared. If they haven't posted recently, like or comment on a company page update.
+
+Do not pitch. Just be visible and genuine.
+
+---
+
+### Step 4: Email 2 — Day 4
 
 **Subject:** Re: {{company}} + pipeline visibility
 
@@ -53,7 +73,19 @@ Joe
 
 ---
 
-### Email 3: Day 7
+### Step 5: LinkedIn Voice Note — Day 7
+
+**Channel:** LinkedIn (Voice Note or Video DM)
+
+Send a short (~30 second) voice note or selfie-style video DM. Keep it personal and conversational.
+
+Script outline:
+
+> Hey {{first_name}}, it's Joe from LeanScale. Wanted to put a face to the name. I saw the funding news — congrats again. I've been helping post-raise teams get their CRM stood up in 30 days so the pipeline is actually visible from day one. Would love to chat for 15 minutes if it's ever relevant. Either way, cheers — good luck with the scale-up.
+
+---
+
+### Step 6: Email 3 — Day 9
 
 **Subject:** before you hire that RevOps person
 
@@ -75,7 +107,19 @@ Joe
 
 ---
 
-### Email 4: Day 14 (Breakup)
+### Step 7: Phone Call — Day 12
+
+**Channel:** Phone
+
+Brief, respectful call. If they don't pick up, leave a voicemail under 30 seconds.
+
+Script:
+
+> Hi {{first_name}}, it's Joe from LeanScale. I sent you a couple of notes about getting your CRM stood up post-raise — just wanted to connect briefly. We do 30-day implementations for B2B tech companies and I thought it might be relevant given the timing. I'll shoot you one more email, but feel free to grab time on my calendar if it's easier — leanscale.team. Thanks!
+
+---
+
+### Step 8: Breakup Email — Day 16
 
 **Subject:** closing the loop
 
@@ -101,7 +145,17 @@ Joe
 
 ---
 
-### Email 1: Day 0
+### Step 1: LinkedIn Connection Request — Day 0
+
+**Channel:** LinkedIn
+
+Send a connection request with a short, relevant note. No pitch.
+
+> {{first_name}}, saw {{company}} is building out the RevOps function — great move. Would love to connect.
+
+---
+
+### Step 2: Email 1 — Day 1
 
 **Subject:** while you're hiring RevOps
 
@@ -124,7 +178,17 @@ LeanScale
 
 ---
 
-### Email 2: Day 4
+### Step 3: LinkedIn Engagement — Day 3
+
+**Channel:** LinkedIn
+
+Engage with their content — like or comment on a recent post. If they've shared anything about hiring, team building, or RevOps, leave a genuine comment.
+
+Do not pitch. Just show up and be helpful.
+
+---
+
+### Step 4: Email 2 — Day 5
 
 **Subject:** Re: while you're hiring RevOps
 
@@ -152,7 +216,31 @@ Joe
 
 ---
 
-### Email 3: Day 10 (Breakup)
+### Step 5: LinkedIn Voice Note — Day 7
+
+**Channel:** LinkedIn (Voice Note or Video DM)
+
+Send a short (~30 second) voice note or selfie-style video DM.
+
+Script outline:
+
+> Hey {{first_name}}, it's Joe from LeanScale. I saw you're hiring for RevOps — that's exciting. Quick thought: we've helped a few companies get the CRM fully built before the new hire even starts. Means they walk into a working system instead of a blank slate. If that sounds interesting, happy to chat for 15 minutes. No pressure either way — good luck with the search.
+
+---
+
+### Step 6: Phone Call — Day 9
+
+**Channel:** Phone
+
+Brief, respectful call. Leave a voicemail if no answer.
+
+Script:
+
+> Hi {{first_name}}, it's Joe from LeanScale. I reached out about getting your CRM stood up before your new RevOps hire starts — we do 30-day builds so they can walk into a working system on day one. Would love to chat if the timing makes sense. I'll send one more note, but feel free to reach out — leanscale.team. Thanks!
+
+---
+
+### Step 7: Breakup Email — Day 12
 
 **Subject:** quick note
 
@@ -178,7 +266,17 @@ Joe
 
 ---
 
-### Email 1: Day 0
+### Step 1: LinkedIn Connection Request — Day 0
+
+**Channel:** LinkedIn
+
+Send a connection request. Reference something specific if possible.
+
+> {{first_name}}, I work with a lot of RevOps leaders navigating CRM decisions — would be great to connect.
+
+---
+
+### Step 2: Email 1 — Day 1
 
 **Subject:** Salesforce → HubSpot in 60 days
 
@@ -204,7 +302,17 @@ LeanScale
 
 ---
 
-### Email 2: Day 4
+### Step 3: LinkedIn Engagement — Day 3
+
+**Channel:** LinkedIn
+
+Like or comment on their content. If they've posted about CRM, data, or RevOps challenges, engage meaningfully. If they've left a G2 review or commented in a community, this is a good signal to reference later.
+
+Do not pitch. Be helpful and visible.
+
+---
+
+### Step 4: Email 2 — Day 5
 
 **Subject:** Re: Salesforce → HubSpot in 60 days
 
@@ -229,7 +337,19 @@ Joe
 
 ---
 
-### Email 3: Day 10
+### Step 5: LinkedIn Voice Note — Day 8
+
+**Channel:** LinkedIn (Voice Note or Video DM)
+
+Send a short (~30 second) voice note or selfie-style video DM.
+
+Script outline:
+
+> Hey {{first_name}}, it's Joe from LeanScale. I know Salesforce migrations sound terrifying — most people I talk to have heard at least one horror story. We've done over 30 of them and the key is running both systems in parallel so there's zero risk. If you're even thinking about it, happy to walk through what the 60 days actually look like. No pressure — just figured a voice note is more human than another email.
+
+---
+
+### Step 6: Email 3 — Day 11
 
 **Subject:** staying or going?
 
@@ -254,6 +374,36 @@ Joe
 
 ---
 
+### Step 7: Phone Call — Day 14
+
+**Channel:** Phone
+
+Brief, respectful call. Leave a voicemail if no answer.
+
+Script:
+
+> Hi {{first_name}}, it's Joe from LeanScale. I reached out about Salesforce — whether you're looking to migrate to HubSpot or just clean up what you've got, we do both. I've done 30-plus of these migrations and I know the fear around data loss is real. Happy to walk through our process if it's ever relevant. I'll send a final note — feel free to reach out anytime at leanscale.team. Thanks!
+
+---
+
+### Step 8: Breakup Email — Day 18
+
+**Subject:** closing the loop on SF
+
+**Body:**
+
+{{first_name}},
+
+I'll leave this one here.
+
+Whether it's migrating off Salesforce or cleaning up what you've got — if it ever becomes a priority, we're at leanscale.team/crm-sprint.
+
+No hard feelings either way.
+
+Joe
+
+---
+
 ## Sequence 4: HubSpot User Expansion
 
 **Trigger:** Company using HubSpot Free or Starter, showing growth signals (hiring, funding)
@@ -262,7 +412,17 @@ Joe
 
 ---
 
-### Email 1: Day 0
+### Step 1: LinkedIn Connection Request — Day 0
+
+**Channel:** LinkedIn
+
+Send a connection request with a short, relevant note.
+
+> {{first_name}}, looks like {{company}} is growing fast — would love to connect and follow along.
+
+---
+
+### Step 2: Email 1 — Day 1
 
 **Subject:** outgrowing HubSpot Free?
 
@@ -286,7 +446,17 @@ LeanScale
 
 ---
 
-### Email 2: Day 4
+### Step 3: LinkedIn Engagement — Day 3
+
+**Channel:** LinkedIn
+
+Engage with their content. Like a post, leave a comment, or react to a company update. If they've posted about growth or scaling, engage there.
+
+Do not pitch. Just be present.
+
+---
+
+### Step 4: Email 2 — Day 5
 
 **Subject:** Re: outgrowing HubSpot Free?
 
@@ -313,6 +483,48 @@ Joe
 
 ---
 
+### Step 5: LinkedIn Voice Note — Day 7
+
+**Channel:** LinkedIn (Voice Note or Video DM)
+
+Send a short (~30 second) voice note or selfie-style video DM.
+
+Script outline:
+
+> Hey {{first_name}}, it's Joe from LeanScale. I see a lot of companies hit a wall with HubSpot Free — the basics are solid but once you need real reporting, lead scoring, or automations, it's a different animal. We build the whole thing out in 30 days, flat fee, and your team is actually using it by the end. Happy to chat if you're hitting that wall. No pressure either way.
+
+---
+
+### Step 6: Phone Call — Day 10
+
+**Channel:** Phone
+
+Brief, respectful call. Leave a voicemail if no answer.
+
+Script:
+
+> Hi {{first_name}}, it's Joe from LeanScale. I reached out about leveling up your HubSpot setup — we do 30-day buildouts, flat fee, and your team is actually using it by the end. If you're feeling the limits of the free tier, I'd love to chat. I'll send one final note, but feel free to grab time at leanscale.team. Thanks!
+
+---
+
+### Step 7: Breakup Email — Day 14
+
+**Subject:** closing the loop
+
+**Body:**
+
+{{first_name}},
+
+I'll assume the timing isn't right.
+
+When you're ready to upgrade from HubSpot Free to a system your team will actually use, we're at leanscale.team/crm-sprint.
+
+$25K flat. 30 days. Done.
+
+Joe
+
+---
+
 ## Sequence 5: Competitor Displacement
 
 **Trigger:** Company using Pipedrive, Close, Copper, or other mid-market CRM
@@ -321,7 +533,17 @@ Joe
 
 ---
 
-### Email 1: Day 0
+### Step 1: LinkedIn Connection Request — Day 0
+
+**Channel:** LinkedIn
+
+Send a connection request with a short, relevant note.
+
+> {{first_name}}, always good to connect with sales leaders scaling B2B teams. Would love to follow {{company}}'s growth.
+
+---
+
+### Step 2: Email 1 — Day 1
 
 **Subject:** {{crm_name}} → HubSpot or Salesforce
 
@@ -345,7 +567,110 @@ LeanScale
 
 ---
 
-### Email 2: Day 5 (Breakup)
+### Step 3: LinkedIn Engagement — Day 3
+
+**Channel:** LinkedIn
+
+Like or comment on their content. If they've posted about sales process, tools, or scaling, engage genuinely.
+
+Do not pitch. Just be visible.
+
+---
+
+### Step 4: Email 2 — Day 5
+
+**Subject:** Re: {{crm_name}} → HubSpot or Salesforce
+
+**Body:**
+
+Following up, {{first_name}}.
+
+The thing about {{crm_name}} — it works great up to a point. Then you start duct-taping integrations, building workarounds, and exporting to spreadsheets for any real reporting.
+
+Here's what the move typically looks like:
+1. We map your current workflows and data
+2. Rebuild everything in HubSpot or Salesforce (your call)
+3. Run both systems in parallel for 2 weeks
+4. Retrain the team on the new system
+5. Cut over with zero data loss
+
+60 days, flat fee, and your team doesn't skip a beat.
+
+Worth 15 minutes to see if you're at that point?
+
+Joe
+
+---
+
+### Step 5: LinkedIn Voice Note — Day 8
+
+**Channel:** LinkedIn (Voice Note or Video DM)
+
+Send a short (~30 second) voice note or selfie-style video DM.
+
+Script outline:
+
+> Hey {{first_name}}, it's Joe from LeanScale. I work with a lot of teams that have outgrown tools like {{crm_name}} and are thinking about making the jump to HubSpot or Salesforce. The migration usually sounds scarier than it is — we run both systems side by side so nothing breaks. If you're starting to feel the limits, I'd love to chat. Either way, appreciate the connection.
+
+---
+
+### Step 6: Email 3 — Day 11
+
+**Subject:** the real cost of staying
+
+**Body:**
+
+{{first_name}},
+
+One thing I hear a lot: "We know we need to move, but it's not the right time."
+
+Here's the thing — the longer you wait, the messier the data gets. Every month you add more contacts, more deals, more custom fields to a system you're eventually going to leave.
+
+Migration in month 6 is way cleaner than migration in month 18.
+
+Not trying to rush you — just sharing what I've seen after 30+ migrations.
+
+If you want to talk through the timing, I'm here.
+
+Joe
+
+---
+
+### Step 7: Phone Call — Day 14
+
+**Channel:** Phone
+
+Brief, respectful call. Leave a voicemail if no answer.
+
+Script:
+
+> Hi {{first_name}}, it's Joe from LeanScale. I've sent a couple of notes about migrating off {{crm_name}} — we do 60-day moves to HubSpot or Salesforce, flat fee, zero data loss. If you're starting to feel the limits, I'd love to chat for 15 minutes. I'll send one more note — or feel free to grab time at leanscale.team. Thanks!
+
+---
+
+### Step 8: Email 4 — Day 17
+
+**Subject:** HubSpot or Salesforce?
+
+**Body:**
+
+{{first_name}},
+
+If you've thought about making the move, the next question is usually: which one?
+
+Quick rule of thumb:
+- **HubSpot** — best for teams under 100, especially if marketing and sales need to live in the same system. Lower total cost, faster adoption.
+- **Salesforce** — best for complex sales processes, enterprise buyers, or when you need deep customization. More powerful, steeper learning curve.
+
+We implement both. Happy to help you think through which one fits {{company}}.
+
+No agenda — just a conversation.
+
+Joe
+
+---
+
+### Step 9: Breakup Email — Day 21
 
 **Subject:** noted
 
@@ -363,14 +688,73 @@ Joe
 
 ---
 
+## Multi-Channel Best Practices
+
+### LinkedIn Connection Requests
+
+- **Acceptance rates:** A short, personalized note gets 40-50% acceptance. A blank request gets 20-25%. Always include a note.
+- **Timing:** Send the connection request before any email. Being "connected" on LinkedIn when they see your email in their inbox builds familiarity.
+- **Do not pitch in the connection request.** The goal is to get accepted, not to sell. Pitchy connection requests get ignored or declined.
+- **If they don't accept:** Continue with the email/phone sequence. Not everyone lives on LinkedIn. Do not send a follow-up connection request.
+
+### Phone Call Scripts
+
+Keep calls under 30 seconds if you get voicemail. If they pick up, respect their time.
+
+**Live answer framework:**
+
+> Hi {{first_name}}, it's Joe from LeanScale — I sent you a couple of notes about [specific topic]. Do you have 30 seconds?
+
+If yes:
+
+> Quick version — we do [30-day CRM builds / 60-day migrations] for B2B companies. Flat fee, working system by the end. I thought it might be relevant given [trigger]. Worth a 15-minute call this week to see if it fits?
+
+If no:
+
+> Totally understand. I'll follow up by email — if the timing ever makes sense, I'm easy to find. Thanks, {{first_name}}.
+
+**Voicemail framework:**
+
+> Hi {{first_name}}, it's Joe from LeanScale. Quick message — [one sentence on what you do and why it's relevant]. I'll send a follow-up email, but feel free to grab time at leanscale.team. Thanks!
+
+Keep voicemails warm, brief, and low-pressure. The goal is to make the next email feel familiar, not to close on the phone.
+
+### LinkedIn Voice Notes and Video DMs
+
+- **Length:** 20-30 seconds max. If it's over 30 seconds, re-record.
+- **Tone:** Conversational, not scripted. Imagine you're leaving a message for someone you met at a conference.
+- **Video vs. voice:** Video is higher-effort but higher-impact. Use video for high-value targets (CRO, CEO). Use voice notes for VP-level and below.
+- **Do not read a script.** Know your three talking points and speak naturally. A little "um" is fine — it sounds human.
+- **Best time to send:** Tuesday through Thursday, 9am-11am in their timezone. Avoid Mondays and Fridays.
+
+### Coordinating Timing Across Channels
+
+- **Space out touches by 1-2 days minimum.** Never send a LinkedIn message and an email on the same day — it feels like a coordinated attack instead of genuine interest.
+- **Lead with LinkedIn, follow with email.** The connection request creates familiarity before the first email lands.
+- **Phone comes late in the sequence.** By the time you call, they've seen your name 4-5 times. The call feels warm, not cold.
+- **Track everything in Amplemarket.** Log LinkedIn touches and phone calls as manual steps so the sequence pauses correctly and you don't accidentally double-tap.
+- **If they engage on one channel, respond there.** If they reply to a LinkedIn voice note, continue the conversation on LinkedIn. Don't force them back to email.
+- **Respect the breakup.** If you've sent the breakup email, stop all channels. No "one more LinkedIn message." The breakup is the breakup.
+
+---
+
 ## General Notes for Amplemarket Setup
 
 **Sending Account:** joe@leanscale.team
+**LinkedIn Account:** Joe's LinkedIn profile (connect via Amplemarket LinkedIn integration)
 
-**Sending Schedule:** 
+**Sending Schedule:**
 - Weekdays only
-- 8am-11am recipient timezone
+- 8am-11am recipient timezone (emails and LinkedIn touches)
+- 10am-12pm recipient timezone (phone calls — slightly later to increase live answer rates)
 - Max 50 new contacts/day per sequence
+
+**Multi-Channel Step Configuration:**
+- Amplemarket supports LinkedIn connection requests, LinkedIn messages, and phone call steps natively — configure these as manual or semi-automated steps in each sequence
+- LinkedIn steps will appear as tasks in the Amplemarket daily queue
+- Phone steps will appear with the prospect's number and call script
+- Set LinkedIn connection requests as the first step (Day 0) and configure email to follow on Day 1
+- Use Amplemarket's "task" step type for LinkedIn engagement (liking/commenting) so it surfaces as a daily to-do
 
 **Personalization Fields:**
 - {{first_name}}
@@ -379,11 +763,14 @@ Joe
 - {{crm_name}} (for competitor sequences)
 
 **Reply Handling:**
-- Positive replies → Book on Calendly
+- Positive replies (any channel) → Book on Calendly
+- LinkedIn accepts/replies → Respond on LinkedIn, then move conversation to email or Calendly
 - Objections → Joe handles personally
-- Unsubscribes → Remove immediately
+- Unsubscribes → Remove immediately from all channels
 
 **A/B Tests to Run:**
 - Subject lines (question vs. statement)
 - Email length (current vs. 50% shorter)
 - CTA (question vs. direct ask)
+- LinkedIn voice note vs. video DM (test response rates)
+- Phone call timing (morning vs. late afternoon)

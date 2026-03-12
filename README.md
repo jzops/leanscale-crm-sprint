@@ -29,7 +29,7 @@
 **Product:**
 - 30-Day Implementation: $25,000
 - 60-Day Migration: $35,000
-- Guarantee Package: $30,000
+- Guarantee Package: $40,000
 
 **Key Messages:**
 - "30 Days to Pipeline. Not 30 Weeks."
@@ -48,6 +48,8 @@
 - [ ] Create Calendly event for sprint calls
 - [ ] Identify 2-3 case study candidates
 - [ ] Set up LinkedIn Insight Tag for retargeting
+- [ ] Google Ads
+- [ ] G2 profile
 
 ---
 
@@ -60,6 +62,9 @@
 | Outbound reply rate | >5% |
 | Sprint slots booked | 4/month |
 | Migration slots booked | 2/month |
+| Pipeline generated | $150K/month |
+| Cost per qualified meeting | <$500 |
+| Landing page conversion rate | >5% |
 
 ---
 

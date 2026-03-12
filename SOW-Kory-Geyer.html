@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @page {
+      margin: 1in;
+      size: letter;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 11pt;
+      line-height: 1.6;
+      color: #000000;
+      margin: 0;
+      padding: 40px 60px;
+      background: #FFFFFF;
+    }
+    h1 {
+      color: #301934;
+      font-size: 28pt;
+      border-bottom: 3px solid #E8FFCF;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    h2 {
+      color: #301934;
+      font-size: 18pt;
+      margin-top: 36px;
+      border-left: 4px solid #E8FFCF;
+      padding-left: 12px;
+      page-break-after: avoid;
+    }
+    h3 {
+      color: #301934;
+      font-size: 14pt;
+      page-break-after: avoid;
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      page-break-inside: avoid;
+    }
+    th {
+      background-color: #301934;
+      color: #FFFBFF;
+      padding: 10px 12px;
+      text-align: left;
+      font-size: 11pt;
+    }
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #E9E9E7;
+      font-size: 10pt;
+      vertical-align: top;
+    }
+    tr:nth-child(even) {
+      background-color: #F5F5F5;
+    }
+    .highlight-box {
+      background-color: #E8FFCF;
+      padding: 15px 20px;
+      border-radius: 5px;
+      margin: 15px 0;
+      page-break-inside: avoid;
+    }
+    ul, ol {
+      page-break-inside: avoid;
+      margin: 8px 0;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    p {
+      orphans: 3;
+      widows: 3;
+      margin: 8px 0;
+    }
+    .subtitle {
+      color: #595959;
+      font-size: 14pt;
+      margin-top: -5px;
+      margin-bottom: 30px;
+    }
+    .footer {
+      margin-top: 60px;
+      padding-top: 15px;
+      border-top: 1px solid #E9E9E7;
+      color: #595959;
+      font-size: 9pt;
+      text-align: center;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+    .section-intro {
+      color: #595959;
+      font-size: 11pt;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Statement of Work</h1>
+  <p class="subtitle">Embedded GTM Operations Engagement</p>
+
+  <h2>Executive Summary</h2>
+  <p>LeanScale will provide an embedded go-to-market operations team to accelerate outbound infrastructure buildout, clean and enrich account and contact data, and implement a signal-driven MQA model — enabling the sales organization to generate pipeline through a repeatable, scalable outbound motion alongside existing partner channels.</p>
+
+  <h2>Client Information</h2>
+  <table>
+    <tr><th style="width: 30%;">Field</th><th>Details</th></tr>
+    <tr><td><strong>Primary Contact</strong></td><td>Kory Geyer, VP of Revenue Operations</td></tr>
+    <tr><td><strong>Secondary Contact</strong></td><td>Jeff (Website & BDR Management, reports to CMO)</td></tr>
+    <tr><td><strong>Reports To</strong></td><td>CRO / Co-Founder</td></tr>
+    <tr><td><strong>Industry</strong></td><td>Cybersecurity — Managed Detection & Response, Federal/DoD</td></tr>
+    <tr><td><strong>CRM</strong></td><td>Salesforce</td></tr>
+    <tr><td><strong>Marketing Automation</strong></td><td>Pardot (limited use — forms, some email)</td></tr>
+    <tr><td><strong>Team Size (Rev Ops)</strong></td><td>12 (inclusive of enablement, comp, field desk)</td></tr>
+  </table>
+
+  <h2>Current Technology Stack</h2>
+  <table>
+    <tr><th>Category</th><th>Tools</th><th>Status</th></tr>
+    <tr><td>CRM</td><td>Salesforce</td><td>Active</td></tr>
+    <tr><td>Marketing Automation</td><td>Pardot</td><td>Active (underutilized)</td></tr>
+    <tr><td>Sales Intelligence</td><td>Gong (Recording, Forecasting, Engage)</td><td>Active — recently launched Gong Engage</td></tr>
+    <tr><td>Data Provider</td><td>ZoomInfo (full stack — ABM, Intent, GTM Studio)</td><td>Canceling May 2026</td></tr>
+    <tr><td>Data Provider</td><td>Cognism</td><td>Active — will remain</td></tr>
+    <tr><td>Data Enrichment</td><td>Clay (Enterprise agreement)</td><td>Active — will remain</td></tr>
+    <tr><td>Signal / Intent</td><td>Common Room</td><td>Active — will remain</td></tr>
+    <tr><td>Prospecting</td><td>LinkedIn Sales Navigator</td><td>Active</td></tr>
+  </table>
+
+  <h2>Project Scope</h2>
+  <p class="section-intro">Based on discovery, LeanScale will focus on three interconnected workstreams designed to build a foundation for scalable, signal-driven outbound and improved pipeline generation.</p>
+
+  <h3>1. Account Data Validation & Cleanup</h3>
+  <p>Audit and remediate account data quality within Salesforce, leveraging Clay for multi-provider validation. This includes resolving parent-child account relationships, identifying and correcting bad or redirect URLs, flagging duplicate or invalid accounts, and establishing a clean account foundation for downstream enrichment and targeting.</p>
+
+  <h3>2. Contact Data Enrichment & Acquisition</h3>
+  <p>Clean existing contact records and acquire net-new contacts for target personas at validated accounts. Leverage Clay's multi-provider waterfall approach (Cognism, Common Room, and additional Clay-integrated providers) to maximize coverage and accuracy post-ZoomInfo sunset.</p>
+
+  <h3>3. MQA Model & Signal-Driven Prioritization</h3>
+  <p>Design and implement a Marketing Qualified Account (MQA) model combining first-party signals (website activity, marketing campaigns, free assessment completions), partner propensity lists (Microsoft and channel partners), and third-party intent data (Common Room). Build prioritization logic that routes high-signal accounts into Gong Engage sequences for BDR and AE action, with clear SLAs and workflow automation.</p>
+
+  <div class="page-break"></div>
+
+  <h2>Deliverables</h2>
+  <table>
+    <tr><th>Deliverable</th><th>Description</th><th>Integration</th></tr>
+    <tr>
+      <td>Account Health Scorecard</td>
+      <td>Clay-powered validation of account data including parent-child mapping, URL verification, and account quality scoring</td>
+      <td>Clay → Salesforce</td>
+    </tr>
+    <tr>
+      <td>Contact Enrichment Pipeline</td>
+      <td>Multi-provider waterfall tables in Clay for persona-based contact acquisition and existing contact data cleanup</td>
+      <td>Clay → Salesforce</td>
+    </tr>
+    <tr>
+      <td>MQA Scoring Model</td>
+      <td>Unified scoring framework combining internal signals, partner lists, and third-party intent into a single account prioritization score</td>
+      <td>Common Room + Clay + Salesforce</td>
+    </tr>
+    <tr>
+      <td>BDR/AE Workflow Design</td>
+      <td>Process documentation and Gong Engage sequence setup for working MQA-qualified accounts with defined SLAs</td>
+      <td>Gong Engage + Salesforce</td>
+    </tr>
+    <tr>
+      <td>Signal Deduplication Logic</td>
+      <td>Framework to prevent double-counting signals across Common Room, Clay, and first-party sources</td>
+      <td>Common Room + Clay</td>
+    </tr>
+    <tr>
+      <td>Partner List Ingestion Process</td>
+      <td>Standardized workflow for processing partner propensity lists (e.g., Microsoft Purview campaigns) into the MQA model</td>
+      <td>Salesforce + Clay</td>
+    </tr>
+  </table>
+
+  <h2>Timeline</h2>
+  <table>
+    <tr><th>Phase</th><th>Activities</th><th>Duration</th></tr>
+    <tr>
+      <td><strong>Month 1</strong></td>
+      <td>
+        <ul>
+          <li>Systems audit and data assessment</li>
+          <li>Account data validation build in Clay (parent-child, URLs, deduplication)</li>
+          <li>Begin Salesforce account cleanup based on Clay output</li>
+          <li>Map existing contact data gaps by persona and account tier</li>
+        </ul>
+      </td>
+      <td>4 weeks</td>
+    </tr>
+    <tr>
+      <td><strong>Month 2</strong></td>
+      <td>
+        <ul>
+          <li>Contact enrichment pipeline build and execution</li>
+          <li>MQA scoring model design (signal inventory, weighting, thresholds)</li>
+          <li>Common Room + Clay signal deduplication framework</li>
+          <li>Partner list ingestion process for Microsoft and channel partners</li>
+        </ul>
+      </td>
+      <td>4 weeks</td>
+    </tr>
+    <tr>
+      <td><strong>Month 3</strong></td>
+      <td>
+        <ul>
+          <li>MQA model implementation and testing</li>
+          <li>Gong Engage sequence setup for MQA-qualified accounts</li>
+          <li>BDR/AE workflow documentation and enablement</li>
+          <li>Metrics dashboard and reporting framework</li>
+          <li>Transition documentation and knowledge transfer</li>
+        </ul>
+      </td>
+      <td>4 weeks</td>
+    </tr>
+  </table>
+
+  <h2>Investment</h2>
+  <div class="highlight-box">
+    <p style="margin: 0;"><strong style="font-size: 14pt; color: #301934;">$15,000 per month</strong></p>
+    <p style="margin: 5px 0 0 0;">3-month embedded engagement — Total investment: $45,000</p>
+  </div>
+
+  <h3>What's Included</h3>
+  <ul>
+    <li>Dedicated GTM Architect (primary point of contact and strategic lead)</li>
+    <li>Dedicated GTM Engineer (hands-on build and execution)</li>
+    <li>Access to LeanScale's internal Center of Excellence for specialized expertise</li>
+    <li>Weekly 30-minute sprint syncs with milestone tracking</li>
+    <li>All LeanScale-provided tooling for data migration, system management, and project delivery</li>
+    <li>Playbooks and documentation for all builds and processes</li>
+  </ul>
+
+  <h2>Working Relationship</h2>
+  <table>
+    <tr><th style="width: 30%;">Element</th><th>Details</th></tr>
+    <tr><td>Communication</td><td>Shared Slack channel, email, ad-hoc video calls</td></tr>
+    <tr><td>Meetings</td><td>Weekly 30-minute sprint syncs</td></tr>
+    <tr><td>Your Team</td><td>1 GTM Architect + 1 GTM Engineer (US Citizens)</td></tr>
+    <tr><td>Responsiveness</td><td>Same-day response during business hours</td></tr>
+    <tr><td>Sprint Methodology</td><td>Weekly sprints with milestone tracking; ~33% capacity reserved for ad-hoc requests</td></tr>
+    <tr><td>Reporting</td><td>Project milestones tracked quarterly, progress reviewed weekly</td></tr>
+  </table>
+
+  <h2>Assumptions & Dependencies</h2>
+  <ul>
+    <li>Salesforce admin access will be provisioned for LeanScale team members (US Citizens) upon completion of required background checks and security clearance processes</li>
+    <li>Access to Clay, Gong, Common Room, and Cognism environments will be provided</li>
+    <li>Kory Geyer and/or Jeff will be available for weekly syncs and ad-hoc questions</li>
+    <li>Partner propensity lists (Microsoft, channel partners) will be shared as received</li>
+    <li>Pardot access for form and email review as needed</li>
+    <li>NDA execution prior to system access</li>
+    <li>Scope is limited to the three workstreams defined above; additional workstreams can be added via mutual agreement</li>
+  </ul>
+
+  <h2>Terms & Conditions</h2>
+  <table>
+    <tr><th style="width: 30%;">Term</th><th>Details</th></tr>
+    <tr><td>Contract Duration</td><td>3 months (month-to-month after initial term)</td></tr>
+    <tr><td>Cancellation</td><td>30-day opt-out for any cause at any point during the engagement</td></tr>
+    <tr><td>Scope Changes</td><td>Scope adjustments accommodated within sprint capacity; significant additions scoped collaboratively</td></tr>
+    <tr><td>Confidentiality</td><td>Full NDA in place; LeanScale adheres to strict data handling protocols</td></tr>
+    <tr><td>Deliverable Ownership</td><td>All deliverables, documentation, and builds are owned by the client</td></tr>
+    <tr><td>Post-Engagement Support</td><td>Full knowledge transfer and transition documentation included</td></tr>
+  </table>
+
+  <div class="footer">
+    <p>Prepared by Joseph Zaghloul, COO — LeanScale</p>
+  </div>
+
+</body>
+</html>

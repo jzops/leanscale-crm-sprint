@@ -1,89 +1,64 @@
-# CRM Sprint — Case Study Template
+# CRM Sprint — Case Studies
 
-*Use this template to document wins from sprint engagements.*
+*Real results from real sprints.*
 
 ---
 
-# [COMPANY NAME]: [HEADLINE RESULT]
+# Integrate.io: Up and Running in 60 Days
 
-**Industry:** [Industry]
-**Company Size:** [Employees]
-**Stage:** [Series A/B/C]
-**CRM:** [HubSpot / Salesforce]
-**Sprint Type:** [30-Day Implementation / 60-Day Migration / Guarantee Package]
+**Industry:** Data Integration / SaaS
+**CRM:** Salesforce
+**Sprint Type:** 60-Day Implementation
 
 ---
 
 ## The Challenge
 
-[2-3 sentences describing what the company was struggling with before engaging LeanScale]
+Integrate.io needed a CRM that could keep up with their growing sales motion. Their existing setup lacked the structure and automation to scale pipeline visibility, lead management, and reporting across the team.
 
 **Before LeanScale:**
-- [Pain point 1]
-- [Pain point 2]
-- [Pain point 3]
+- No standardized pipeline or deal tracking
+- Manual processes slowing down the sales team
+- Limited reporting and forecasting capability
 
 ---
 
 ## The Solution
 
-[Brief description of what we did]
+LeanScale delivered a full Salesforce implementation in 60 days — complete with pipeline architecture, automation, integrations, and team training.
 
 **Sprint Timeline:**
 
 | Week | Focus | Key Deliverables |
 |------|-------|-----------------|
-| 1 | [Focus] | [What we built] |
-| 2 | [Focus] | [What we built] |
-| 3 | [Focus] | [What we built] |
-| 4 | [Focus] | [What we built] |
+| 1-2 | Foundation | Pipeline stages, deal properties, custom objects, data import |
+| 3-4 | Automation | Lead routing, activity tracking, workflow automation |
+| 5-6 | Integration | Email sync, calendar, reporting dashboards |
+| 7-8 | Launch | Team training, go-live support, adoption monitoring |
 
 ---
 
 ## The Results
 
-**After 30 Days:**
-- [Metric 1: e.g., "100% rep adoption"]
-- [Metric 2: e.g., "$2M pipeline visibility achieved"]
-- [Metric 3: e.g., "Lead response time reduced from 4 hours to 15 minutes"]
+**After 60 Days:**
+- Fully operational Salesforce instance
+- Sales team ramped and actively using the platform
+- Real-time pipeline visibility for leadership
+- Smooth, thorough implementation praised by CEO
 
 ---
 
 ## Quote
 
-> "[Testimonial quote from stakeholder]"
-> 
-> **— [Name], [Title], [Company]**
-
----
-
-## Key Wins
-
-### [Win 1: e.g., "Pipeline Visibility"]
-[1-2 sentences explaining the specific improvement]
-
-### [Win 2: e.g., "Automated Lead Routing"]
-[1-2 sentences explaining the specific improvement]
-
-### [Win 3: e.g., "Rep Adoption"]
-[1-2 sentences explaining the specific improvement]
-
----
-
-## Before & After
-
-| Metric | Before | After |
-|--------|--------|-------|
-| Pipeline visibility | [Before] | [After] |
-| Lead response time | [Before] | [After] |
-| Rep CRM usage | [Before] | [After] |
-| Forecast accuracy | [Before] | [After] |
+> "LeanScale provided the playbook and technical expertise to get us up and running in 60 days. We were impressed by the speed, but even more impressed by how smooth and thorough the process was."
+>
+> **— Donal Tobin, CEO, Integrate.io**
 
 ---
 
 ## Why It Worked
 
-[2-3 sentences on why this sprint was successful — what we did differently than traditional consultants]
+Speed without cutting corners. LeanScale brought a proven playbook — not a discovery phase and a PowerPoint. The team was embedded from day one, building alongside the sales org instead of presenting to them.
 
 ---
 
@@ -91,93 +66,149 @@
 
 ---
 
-# Example: Filled Out
+# Mistral: Salesforce Migration in 60 Days
 
----
-
-# Fintech Co: From Spreadsheets to $2M Pipeline in 30 Days
-
-**Industry:** Financial Technology
-**Company Size:** 65 employees
-**Stage:** Series B
-**CRM:** HubSpot
-**Sprint Type:** 30-Day Implementation
+**Industry:** AI / Deep Tech
+**CRM:** Salesforce
+**Sprint Type:** 60-Day Migration
 
 ---
 
 ## The Challenge
 
-Fintech Co had just raised their Series B and was scaling their sales team from 4 to 12 reps. Their "CRM" was a shared Google Sheet that the CEO updated manually every Monday.
+Mistral needed to migrate to Salesforce and build out revenue tracking infrastructure fast. As a rapidly scaling AI company, they couldn't afford months of downtime or a drawn-out migration process. They also needed monthly contracted revenue (MCR) tracking built from scratch.
 
 **Before LeanScale:**
-- No pipeline visibility between weekly updates
-- Reps tracking their own deals in personal spreadsheets
-- No lead routing — inbounds sat in a shared inbox
-- Zero automation — everything was manual
+- No centralized revenue tracking system
+- Migration timeline pressure from rapid growth
+- Needed both migration and custom revenue reporting simultaneously
 
 ---
 
 ## The Solution
 
-We implemented HubSpot Sales Hub Professional in 30 days, with a focus on simplicity and adoption.
+LeanScale executed a full Salesforce migration in 60 days while simultaneously building out monthly contracted revenue tracking — two parallel workstreams delivered on time.
 
 **Sprint Timeline:**
 
 | Week | Focus | Key Deliverables |
 |------|-------|-----------------|
-| 1 | Foundation | 6-stage pipeline, deal properties, data import from spreadsheets |
-| 2 | Automation | Lead routing (round robin), lead scoring, Slack notifications |
-| 3 | Integration | Gmail sync, calendar integration, Gong connection |
-| 4 | Launch | Dashboard buildout, 2 training sessions, go-live support |
+| 1-2 | Migration Planning | Data mapping, custom object architecture, MCR model design |
+| 3-4 | Data Migration | Full data migration, historical records, zero data loss |
+| 5-6 | Revenue Tracking | MCR reporting, dashboards, automated revenue calculations |
+| 7-8 | Launch | Parallel run, validation, team training, go-live |
 
 ---
 
 ## The Results
 
-**After 30 Days:**
-- 100% rep adoption (12/12 reps logging in daily)
-- $2M in active pipeline tracked in real-time
-- Lead response time reduced from 4 hours to 12 minutes
-- CEO stopped manually updating spreadsheets forever
-
----
-
-## Quote
-
-> "I can finally see what's happening. The visibility alone was worth it — but the time I got back is what really changed things for me."
-> 
-> **— CEO, Fintech Co**
+**After 60 Days:**
+- Complete Salesforce migration — zero data loss, zero downtime
+- Monthly contracted revenue tracking live and reporting
+- Leadership has real-time revenue visibility
+- Team fully transitioned and operational on new platform
 
 ---
 
 ## Key Wins
 
-### Pipeline Visibility
-For the first time, leadership could see every deal, every stage, every rep — in real-time. Monday spreadsheet updates became obsolete.
+### Dual-Track Delivery
+Migration and custom revenue tracking delivered simultaneously — not sequentially. Two workstreams, one timeline.
 
-### Automated Lead Routing
-Inbound leads now go directly to the right rep within 60 seconds. No more shared inbox. No more leads falling through cracks.
+### Revenue Visibility
+For the first time, Mistral had automated MCR tracking with real-time dashboards — replacing manual spreadsheet calculations.
 
-### Rep Adoption
-By building the CRM around how reps actually work (minimal required fields, mobile-friendly, Slack alerts), we hit 100% adoption by Day 25.
-
----
-
-## Before & After
-
-| Metric | Before | After |
-|--------|--------|-------|
-| Pipeline visibility | Weekly spreadsheet | Real-time dashboard |
-| Lead response time | 4 hours | 12 minutes |
-| Rep CRM usage | 0% | 100% |
-| Time CEO spent on reporting | 3 hrs/week | 0 |
+### Zero-Disruption Migration
+The sales team never missed a beat. Parallel run period ensured continuity before full cutover.
 
 ---
 
-## Why It Worked
+*Ready to get the same results? Book a 60-Day Migration: leanscale.team/crm-sprint*
 
-We didn't over-engineer. The pipeline has 6 stages, not 14. Deal properties capture what matters, not everything. The result: reps use it because it's easier than their spreadsheets.
+---
+
+# Clio: Deep Salesforce Optimization Across the Revenue Lifecycle
+
+**Industry:** Legal Tech / SaaS
+**CRM:** Salesforce
+**Sprint Type:** Implementation (Multiple Engagements)
+
+---
+
+## The Challenge
+
+Clio had Salesforce but wasn't getting the full picture. They needed visibility into win rate drivers, post-sales lifecycle tracking, MRR reporting, and sales engineer workflows — all interconnected and reporting in real-time.
+
+**Before LeanScale:**
+- Win rate analysis was manual and inconsistent
+- No structured post-sales lifecycle tracking
+- MRR reporting disconnected from pipeline data
+- Sales engineer activities invisible to leadership
+
+---
+
+## The Solution
+
+LeanScale embedded with Clio's RevOps team across multiple sprints, each solving a specific visibility gap.
+
+**Engagement Summary:**
+
+| Sprint | Focus | Key Deliverables |
+|--------|-------|-----------------|
+| 1 | Win Rate Intelligence | Heat mapping on win rate & MRR by segment, stage, rep |
+| 2 | Post-Sales Lifecycle | Customer journey tracking from close to renewal |
+| 3 | Revenue Reporting | Monthly recurring revenue dashboards and automation |
+| 4 | SE Visibility | Sales engineer user journey mapping and activity tracking |
+
+---
+
+## The Results
+
+**Across Engagements:**
+- Heat maps showing exactly where and why deals win or lose
+- Full post-sales lifecycle visibility — onboarding through renewal
+- Automated MRR reporting replacing manual spreadsheet work
+- Sales engineer workload and impact visible to leadership for the first time
+
+---
+
+## Key Wins
+
+### Win Rate Intelligence
+Leadership can now see win rate by segment, deal size, and rep — and understand *why* certain deals close. Data-driven coaching replaced gut feel.
+
+### Post-Sales Visibility
+The customer lifecycle no longer disappears after close. Every stage from onboarding to renewal is tracked and measured.
+
+### SE Impact Measurement
+Sales engineers went from invisible to measurable. Leadership can now see SE involvement correlated with win rates and deal size.
 
 ---
 
 *Ready to get the same results? Book a 30-Day Sprint: leanscale.team/crm-sprint*
+
+---
+
+# What Our Clients Say
+
+> "This team has done an incredible job with our portcos. They're ready to engage the second we make an investment and give our founders the best shot at winning."
+>
+> **— Michael Dzik, Growth Partner, Radian Capital**
+
+> "This is the most competent team I've ever worked with. They know exactly what to do and how to tailor it to your business."
+>
+> **— Thomas Miller, CRO, Human**
+
+> "LeanScale provided the playbook and technical expertise to get us up and running in 60 days. We were impressed by the speed, but even more impressed by how smooth and thorough the process was."
+>
+> **— Donal Tobin, CEO, Integrate.io**
+
+---
+
+## Clients We've Worked With
+
+Clio · Chainguard · Mistral · CB Insights · Fountain · Wealth.com · JamPack · SpyCloud · Integrate.io · AssemblyAI · Spectora · Komet Sales · 8020 Consulting · Govenda
+
+---
+
+*68 GTM playbooks. 50+ implementations. See our full playbook library: playbooks.leanscale.team/projects*

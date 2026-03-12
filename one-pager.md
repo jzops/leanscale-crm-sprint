@@ -48,7 +48,7 @@ By the time the system is "live," your business has changed. Reps don't use it. 
 |---------|-------|----------|-----------|
 | **30-Day Implementation** | $25,000 | 30 days | If your team isn't using it, we keep working free |
 | **60-Day Migration** | $35,000 | 60 days | Zero data loss. Zero downtime. |
-| **Guarantee Package** | $30,000 | 60 days | 80%+ adoption or full refund |
+| **Guarantee Package** | $40,000 | 60 days | 80%+ adoption or full refund. Includes executive alignment workshop & custom adoption playbook. |
 
 *All pricing is flat fee. No hourly billing. No scope creep.*
 
@@ -75,6 +75,9 @@ We're not consultants. We're **operators**.
 ---
 
 ## Next Steps
+
+**Take the free CRM Readiness Assessment:**
+leanscale.team/assessment
 
 **Book a 15-minute call:**
 leanscale.team/crm-sprint

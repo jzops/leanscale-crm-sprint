@@ -34,6 +34,8 @@ LeanScale is launching a productized CRM implementation offering targeting B2B t
 - Current CRM is either nonexistent, broken, or being outgrown
 - Decision makers: CRO, VP Sales, Head of RevOps, sometimes CEO
 
+> **Primary Wedge:** Post-Series A/B companies standing up their first real CRM. These buyers have faster sales cycles, less procurement friction, and the "30 days" message hits hardest — they need pipeline visibility *now*, not next quarter. No legacy system to untangle, no migration complexity, just a clean build. The migration buyer (Offer 2) should be positioned as a secondary motion; it's a bigger deal but longer sales cycle and more stakeholders involved.
+
 **Secondary:** PE/VC portfolio ops teams looking for a go-to partner
 
 ### Why Now
@@ -96,7 +98,7 @@ LeanScale is launching a productized CRM implementation offering targeting B2B t
 
 ### Offer 3: The CRM Guarantee (Premium)
 
-**Price:** $30,000 (refundable)
+**Price:** $40,000 (refundable)
 
 **What's Included:**
 - Everything in the 30-Day Sprint
@@ -104,6 +106,8 @@ LeanScale is launching a productized CRM implementation offering targeting B2B t
 - Daily login tracking, activity monitoring
 - Adoption coaching for lagging reps
 - Weekly adoption reports to leadership
+- Executive alignment workshop
+- Custom adoption playbook
 
 **Guarantee:** 80%+ daily active usage by sales team within 60 days, or full refund.
 
@@ -317,6 +321,57 @@ Comment "SPRINT" if you want details.
 
 ---
 
+## Mid-Funnel Strategy
+
+**Purpose:** Bridge the gap between awareness (LinkedIn organic/ads) and bottom-funnel conversion (book a call). Buyers who aren't ready for a sales conversation still need a path to engage, self-qualify, and build trust. These assets capture contact info at the moment of curiosity and feed into nurture sequences that move prospects toward a sprint booking.
+
+### CRM Readiness Assessment
+
+Interactive 5-question quiz hosted on the website. Captures email on submission, generates a personalized readiness score (0-100) with tailored recommendations, and feeds the contact into a nurture sequence segmented by score tier.
+
+**The 5 Questions:**
+
+1. **How does your team currently track deals?** (Spreadsheets / Basic CRM but nobody uses it / CRM that's outgrown / No system at all) — Measures current state maturity.
+2. **How many customer-facing reps do you have?** (1-5 / 6-15 / 16-50 / 50+) — Determines complexity and offer fit.
+3. **Have you closed a funding round in the last 12 months?** (Yes / No / Currently raising) — Qualifies budget and urgency.
+4. **What's your biggest CRM pain right now?** (No pipeline visibility / Reps won't use it / Data is a mess / We've outgrown our current tool / We don't have one) — Identifies primary pain for personalized follow-up.
+5. **When do you need your CRM fully operational?** (Yesterday / Within 30 days / Within 90 days / No rush) — Gauges buying timeline.
+
+**Scoring:** Each answer maps to a 0-20 point range. Scores above 70 get a "You're ready for a sprint" recommendation with a direct booking link. Scores 40-70 get educational content. Scores below 40 get a "here's how to start thinking about this" nurture track.
+
+### ROI Calculator
+
+**"What's your broken CRM costing you?"**
+
+Embedded calculator on the landing page. Prospect inputs their data, gets an instant revenue impact estimate.
+
+**Inputs:**
+- Number of sales reps
+- Average deal size ($)
+- Current win rate (%)
+- Estimated pipeline leakage (% of deals lost to process failures: no follow-up, bad data, missed handoffs)
+
+**Formula/Logic:**
+```
+Annual pipeline = Number of reps x Average deal size x Deals per rep per year (assume 48)
+Revenue at current win rate = Annual pipeline x Win rate
+Revenue leakage = Annual pipeline x Pipeline leakage % x Win rate
+Recoverable revenue = Revenue leakage x 50% (conservative recovery estimate with proper CRM)
+ROI multiple = Recoverable revenue / $25,000 (sprint cost)
+```
+
+**Output:** "Your team is leaving an estimated $X on the table annually. A $25K CRM sprint could recover $Y in the first year — that's a Zx return."
+
+### Gated Webinar Replays
+
+On-demand recordings of the "30-Day CRM Sprint: Live Build" webinar series, gated behind an email capture form. Each session covers one week of the sprint (Foundation, Automation, Integration, Training + Go-Live). Prospects who watch multiple sessions are flagged as high-intent in the CRM and routed to sales.
+
+### One-Pager Download
+
+The CRM Sprint one-pager already exists. Now gated on the campaign landing page — email required to download. Serves as a quick-reference leave-behind for prospects evaluating internally and sharing with their leadership team.
+
+---
+
 ## Other Channels
 
 ### 1. Cold Outbound (Amplemarket)
@@ -424,16 +479,93 @@ Comment "SPRINT" if you want details.
 
 ---
 
+### 8. Google Ads / Search Intent Capture
+
+**Target Keywords:**
+- "CRM implementation services"
+- "HubSpot setup consultant"
+- "Salesforce to HubSpot migration"
+- "CRM implementation timeline"
+
+**Budget:** $1,000-2,000/month to start
+
+**Landing Page:** Campaign landing page with UTM tracking (source=google, medium=cpc, campaign=crm-sprint)
+
+**Justification:** These are highest-intent buyers — someone Googling "CRM implementation services" has already decided they need help. At $50-100/click, CPC is high but efficient when you're selling a $25K engagement. Even 1 closed deal per month makes the unit economics work. This channel also captures buyers who aren't active on LinkedIn or reachable via outbound.
+
+---
+
+### 9. G2 / Review Site Strategy
+
+**G2 Profile:**
+- Set up LeanScale profile under "CRM Implementation" and "RevOps Consulting" categories
+- Complete profile with case studies, pricing transparency, and sprint methodology
+- Ask 5-10 past clients for G2 reviews (target: 4.5+ stars)
+- Leverage G2 buyer intent data — get notified when companies in our ICP are researching CRM implementation on G2
+
+**Clutch Profile:**
+- Set up Clutch profile in same categories
+- Clutch verifies reviews via client interviews — adds credibility layer
+- Target "Top CRM Consultants" list placement
+
+**Why This Matters:** B2B buyers increasingly start their vendor research on review sites. Being present with strong reviews creates a trust shortcut, especially for buyers who find us through other channels and then validate on G2/Clutch before booking a call.
+
+---
+
 ## Metrics to Track
+
+### Awareness & Engagement
 
 | Metric | Target | Notes |
 |--------|--------|-------|
 | LinkedIn post impressions | 50K/month | Organic reach |
 | LinkedIn engagement rate | >3% | Comments + shares |
+| LinkedIn engagement from ICP titles | >40% of total | Track CRO, VP Sales, RevOps, CEO engagement specifically — vanity engagement from non-buyers doesn't count |
 | Inbound demo requests | 10/month | From campaign sources |
 | Outbound reply rate | >5% | Amplemarket sequences |
+
+### Pipeline & Revenue
+
+| Metric | Target | Notes |
+|--------|--------|-------|
+| Pipeline generated (campaign-sourced) | $200K/month | Tag by first-touch attribution: LinkedIn organic, LinkedIn paid, Google Ads, outbound, partner, G2, webinar, content |
 | Sprint slots booked | 4/month | $100K MRR addition |
 | Migration slots booked | 2/month | $70K MRR addition |
+| Cost per qualified meeting (by channel) | <$500 | Break out by: LinkedIn paid, Google Ads, outbound, partner referral. Partner should be lowest, paid highest |
+| Sequence-to-meeting conversion rate | >3% by sequence type | Track separately: funding trigger, hiring trigger, tech stack trigger, re-engagement. Optimize lowest performers |
+
+### Funnel Conversion
+
+| Metric | Target | Notes |
+|--------|--------|-------|
+| Landing page conversion rate (by source) | >5% overall | Break out by traffic source: LinkedIn, Google, direct, referral. Expect Google to convert highest (intent) |
+| CRM Readiness Assessment completions | 200/month | Email capture rate on quiz |
+| ROI Calculator usage | 150/month | Track completion rate and average inputs |
+| Webinar replay views (gated) | 100/month | Track by session, measure multi-session viewers as high intent |
+| One-pager downloads | 100/month | Gated on landing page |
+
+---
+
+## CAC Model
+
+**Target CAC:** $5,000-7,000 per closed client (assuming 20-30% expansion rate on accounts — clients who start with a sprint often come back for migration, ongoing RevOps, or additional automation work).
+
+**Unit Economics:**
+- At $25K ACV base, target CAC of $5K-7K yields ~4:1 LTV:CAC ratio (healthy for services businesses)
+- With expansion revenue, effective LTV rises to $35K-50K, pushing ratio toward 5:1-7:1
+- Services businesses should target 3:1 minimum; we're well above that
+
+**Expected CAC by Channel:**
+
+| Channel | Estimated CAC | Volume | Notes |
+|---------|---------------|--------|-------|
+| Partner referrals | $1,000-2,000 | Low-medium | Lowest CAC. Referral fee only, high close rate. Invest in relationships. |
+| Inbound (organic LinkedIn, content, webinar) | $3,000-5,000 | Medium | Time-intensive but compounds. Best long-term economics. |
+| Outbound (Amplemarket) | $5,000-7,000 | Medium-high | Scalable, predictable. CAC driven by sequence volume and SDR time. |
+| Google Ads | $7,000-10,000 | Low-medium | Highest CAC but highest intent. Acceptable at $25K ACV. Optimize over time. |
+| LinkedIn Ads (paid) | $8,000-12,000 | Low | Expensive for direct conversion. Better as awareness/retargeting layer than primary acquisition. |
+
+**Budget Allocation Principle:** Weight spend toward lowest-CAC channels first. Scale paid channels only after organic and outbound are running efficiently.
 
 ---
 
@@ -442,12 +574,15 @@ Comment "SPRINT" if you want details.
 | Item | Monthly Cost | Notes |
 |------|--------------|-------|
 | LinkedIn Ads (boosting) | $2,000-5,000 | Document ads, post boosts |
+| Google Ads (search) | $1,000-2,000 | CRM implementation keywords, highest-intent channel |
 | Amplemarket outbound | Already have | Existing tool |
 | Content creation | Internal | Joe + Q |
 | Webinar platform | $200 | Zoom webinar or similar |
+| G2 profile | $300-500 | Profile setup + maintenance, paid features for intent data |
+| Video production | $0 | iPhone + Loom (scrappy > polished for LinkedIn) |
 | Referral fees | Variable | 10% of deal value |
 
-**Total:** ~$3,000-6,000/month to start
+**Total:** ~$4,500-8,700/month to start (excluding referral fees)
 
 ---
 
@@ -465,15 +600,18 @@ Comment "SPRINT" if you want details.
 
 ## Open Questions
 
-1. **Guarantee terms:** How do we define "adoption"? Daily login? Activity logged? Need clear threshold.
+1. ~~**Guarantee terms:** How do we define "adoption"? Daily login? Activity logged? Need clear threshold.~~
+   **RESOLVED:** Adoption = daily login + at least 1 activity logged per rep. Tracked via CRM admin dashboard. This is measurable, defensible, and sets a clear bar without being unreasonable for the client.
 
 2. **Capacity:** How many sprints can we run simultaneously? Need to cap or waitlist.
 
-3. **Pricing flexibility:** Is $25K firm or do we flex for larger/smaller deals?
+3. ~~**Pricing flexibility:** Is $25K firm or do we flex for larger/smaller deals?~~
+   **RESOLVED:** Base pricing ($25K sprint, $35K migration, $40K guarantee) is firm. Enterprise engagements (500+ users) are quoted separately — these are custom scoping conversations, not discounted versions of the sprint.
 
 4. **Case studies:** Can we get 2-3 clients to go on record for testimonials?
 
-5. **HubSpot/Salesforce split:** Do we lead with one platform or stay agnostic?
+5. ~~**HubSpot/Salesforce split:** Do we lead with one platform or stay agnostic?~~
+   **RESOLVED:** Lead with platform-agnostic positioning in all marketing and outbound. "We implement the right CRM for your team" — not "we're a HubSpot shop." Recommend the specific platform based on team size, complexity, and existing tech stack on the first discovery call. This keeps the top of funnel wide and avoids alienating prospects on either platform.
 
 ---
 
