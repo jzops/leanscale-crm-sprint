@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -236,14 +237,31 @@ tr:hover td{background:var(--bg-card-hover)}
 .expandable .expand-arrow{transition:transform .2s ease;font-size:12px;color:var(--text-dim)}
 .expandable.open .expand-arrow{transform:rotate(90deg)}
 .expandable .expand-body{
-  max-height:0;overflow:hidden;transition:max-height .3s ease;
+  max-height:0;overflow:hidden;transition:max-height .4s ease;
   padding:0 16px;
 }
-.expandable.open .expand-body{max-height:2000px;padding:14px 16px}
+.expandable.open .expand-body{max-height:none;overflow:auto;padding:14px 16px}
 .expand-body p{font-size:12px;color:var(--text-muted);line-height:1.7;margin-bottom:8px}
 .expand-body ul{padding-left:16px;margin-bottom:8px}
 .expand-body li{font-size:12px;color:var(--text-muted);margin-bottom:3px}
 .expand-body .hl{background:var(--purple-glow);border-left:3px solid var(--purple);padding:10px 14px;border-radius:0 6px 6px 0;margin:8px 0;font-size:12px;color:var(--text-secondary)}
+.expand-body h1,.expand-body h2,.expand-body h3,.expand-body h4{color:var(--text);margin:12px 0 6px;font-weight:600}
+.expand-body h1{font-size:18px;border-bottom:1px solid var(--border);padding-bottom:6px}
+.expand-body h2{font-size:15px;border-bottom:1px solid var(--border);padding-bottom:4px}
+.expand-body h3{font-size:13px}
+.expand-body h4{font-size:12px;color:var(--text-secondary)}
+.expand-body blockquote{border-left:3px solid var(--purple);padding:8px 14px;margin:8px 0;background:var(--purple-glow);border-radius:0 6px 6px 0;font-size:12px;color:var(--text-secondary);font-style:italic}
+.expand-body table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12px}
+.expand-body th{text-align:left;padding:6px 10px;background:var(--bg-surface);color:var(--text-secondary);border:1px solid var(--border);font-weight:600}
+.expand-body td{padding:6px 10px;border:1px solid var(--border);color:var(--text-muted)}
+.expand-body code{font-family:var(--mono);font-size:11px;background:var(--bg-surface);padding:1px 5px;border-radius:4px;color:var(--purple-light)}
+.expand-body pre{background:var(--bg-surface);padding:12px;border-radius:6px;margin:8px 0;overflow-x:auto}
+.expand-body pre code{padding:0;background:none}
+.expand-body hr{border:none;border-top:1px solid var(--border);margin:12px 0}
+.expand-body strong{color:var(--text-secondary)}
+.expand-body ol{padding-left:16px;margin-bottom:8px}
+.expand-body ol li{font-size:12px;color:var(--text-muted);margin-bottom:3px}
+.expand-body .loading-docs{color:var(--text-dim);font-size:12px;padding:8px 0;font-style:italic}
 
 /* ===== ICP CARDS ===== */
 .icp-list{list-style:none}
@@ -561,7 +579,7 @@ tr:hover td{background:var(--bg-card-hover)}
     <!-- ====== PANEL: PLAYBOOK ====== -->
     <div class="panel" id="panel-playbook">
       <div class="section-title">Playbook Viewer</div>
-      <div class="section-sub">Expand any section to view full content summaries from each asset.</div>
+      <div class="section-sub">Expand any section to view the full document rendered from the source files.</div>
       <div class="card" style="padding:0;overflow:hidden" id="playbookCard">
         <!-- Filled by JS -->
       </div>
@@ -702,108 +720,18 @@ function navTo(panel) {
 
 // ===== PLAYBOOK =====
 const playbook = [
-  {title:'📋 Design Document — DESIGN-DOC.md',content:`
-    <p><strong>Executive Summary:</strong> Productized CRM implementation for B2B tech. Speed + guarantee vs traditional consulting.</p>
-    <div class="hl">"Your CRM should take less time to implement than your free trial takes to expire."</div>
-    <ul>
-      <li><strong>2 packages:</strong> $25K implementation, $35K migration — both with guarantees. 250+ users quoted separately.</li>
-      <li><strong>Primary wedge:</strong> Post-Series A/B first CRM build — fastest sales cycle, least friction</li>
-      <li><strong>9 channels</strong> ranked by CAC from $1K (partners) to $12K (LinkedIn ads)</li>
-      <li><strong>Mid-funnel:</strong> CRM Readiness Assessment, ROI Calculator, case studies, one-pager download</li>
-      <li><strong>Target:</strong> $200K pipeline/mo, 6 deals/mo, $5-7K blended CAC</li>
-      <li><strong>Budget:</strong> $4,500-8,700/mo</li>
-    </ul>
-    <p><strong>Open questions:</strong> Sprint capacity limits, case study candidates (need 2-3 on record).</p>
-  `},
-  {title:'🌐 Landing Page — index.html',content:`
-    <p>Modern dark-theme landing page ready to deploy. Inter font, purple/lime brand, scroll animations.</p>
-    <ul>
-      <li><strong>Hero:</strong> "30 Days to Pipeline. Not 30 Weeks." + dual CTAs</li>
-      <li><strong>Trust bar:</strong> Clio, Chainguard, Mistral, Fountain, SpyCloud</li>
-      <li><strong>Stats:</strong> 91% CRM adoption, 43% underperformance, 74% missed follow-ups (sourced)</li>
-      <li><strong>Comparison table:</strong> Traditional vs Sprint side-by-side</li>
-      <li><strong>Pricing cards:</strong> 2 packages with guarantees</li>
-      <li><strong>Testimonials + FAQ + email capture modal</strong></li>
-    </ul>
-  `},
-  {title:'📨 Outbound Sequences — outbound-sequences.md',content:`
-    <p>5 multi-channel Amplemarket sequences, each 9 steps over ~21 days.</p>
-    <ul>
-      <li><strong>Seq 1:</strong> Post-Funding Trigger (Series A-C announced in last 30 days)</li>
-      <li><strong>Seq 2:</strong> Hiring Signal (RevOps/Sales Ops job posting)</li>
-      <li><strong>Seq 3:</strong> Tech Stack Signal (HubSpot Free/Starter or basic Salesforce)</li>
-      <li><strong>Seq 4:</strong> Re-engagement (previous conversation, 30-60 days cold)</li>
-      <li><strong>Seq 5:</strong> Competitor Displacement (evaluating other consultants)</li>
-    </ul>
-    <p><strong>Pattern:</strong> LI Connect → Email → LI Engage → Email → Voice Note → Email → Phone → Email → Breakup</p>
-  `},
-  {title:'📅 LinkedIn Content Calendar — linkedin-content-calendar.md',content:`
-    <p>6 weeks of content + video strategy + evergreen post bank.</p>
-    <ul>
-      <li><strong>Week 1:</strong> Problem Awareness (horror story, cost of waiting, spreadsheet trap)</li>
-      <li><strong>Week 2:</strong> Solution Introduction (sprint timeline, guarantee, anti-consultant)</li>
-      <li><strong>Week 3:</strong> Social Proof (case study, adoption stats, before/after)</li>
-      <li><strong>Week 4:</strong> Objection Handling (speed vs quality, price, complexity)</li>
-      <li><strong>Week 5:</strong> Tactical Playbooks (lead scoring, dashboards, migration checklist)</li>
-      <li><strong>Week 6:</strong> Industry Angles (fintech, cybersecurity, dev tools)</li>
-    </ul>
-    <p><strong>Video:</strong> 1/week (Tuesday) — CRM tips, BTS sprint clips, dashboard walkthroughs, hot takes.</p>
-    <p><strong>12 evergreen posts</strong> for quarterly recycling.</p>
-  `},
-  {title:'📣 LinkedIn + Google Ads — linkedin-ads.md',content:`
-    <ul>
-      <li><strong>LinkedIn targeting:</strong> VP Sales, CRO, RevOps — Director+, 51-1000 employees, SaaS/IT/FinServ</li>
-      <li><strong>6 organic ad creatives:</strong> Problem call-out, guarantee hook, anti-consultant, migration pain, social proof, carousel playbook</li>
-      <li><strong>3 video ads:</strong> 30-sec pitch, 60-sec before/after, 45-sec testimonial</li>
-      <li><strong>Google Ads:</strong> 8 keywords (CRM implementation, HubSpot setup, SF→HubSpot), $1-2K/mo, 3 responsive search ads</li>
-    </ul>
-  `},
-  {title:'🤝 Partner Outreach — partner-outreach.md',content:`
-    <ul>
-      <li><strong>10 HubSpot partners:</strong> Aptitude 8, New Breed, SmartBug, Revenue River, Impulse Creative, Lynton, Mole Street, Remotish, Refine Labs, Instrumental Group</li>
-      <li><strong>Fractional CROs:</strong> Source via Pavilion, LinkedIn Sales Nav, TopFrac/Bolster</li>
-      <li><strong>7 VC firms:</strong> a16z, Insight, Bessemer, Sequoia, Accel, Index, Battery</li>
-      <li><strong>5 enterprise SIs:</strong> Accenture, Deloitte, Slalom + others — overflow referrals</li>
-      <li><strong>90-day activation plan</strong> with weekly milestones</li>
-      <li><strong>Co-marketing playbook:</strong> joint webinars, co-branded content, LI cross-promotion</li>
-    </ul>
-  `},
-  {title:'📄 One-Pager — one-pager.md',content:`
-    <p>PDF leave-behind. Gated on landing page (email required).</p>
-    <ul>
-      <li><strong>The Problem:</strong> 6-18 months, $100K+</li>
-      <li><strong>Sprint Timeline:</strong> Foundation → Automation → Integration → Launch</li>
-      <li><strong>Pricing:</strong> $25K implementation / $35K migration. 250+ users quoted separately.</li>
-      <li><strong>Who it's for:</strong> Series A-C, 50-250 CRM users, 5-50 reps</li>
-      <li><strong>Why LeanScale:</strong> 50+ implementations, embedded at Clio/Chainguard/Mistral/Fountain/SpyCloud</li>
-      <li><strong>CTAs:</strong> CRM Readiness Assessment + 15-min call + direct email</li>
-    </ul>
-  `},
-  {title:'✉️ Email Nurture — email-nurture.md',content:`
-    <ul>
-      <li><strong>Trigger 1:</strong> Website Visit (No Booking) — 5 emails / 14 days</li>
-      <li><strong>Trigger 2:</strong> Webinar Attendee — 6 emails / 21 days</li>
-      <li><strong>Trigger 3:</strong> Assessment Completed — 3 emails / 7 days (score-based)</li>
-    </ul>
-    <p><strong>Behavioral branching:</strong></p>
-    <ul>
-      <li><strong>High engagement</strong> (3+ opens, 2+ clicks): case study → personal video → booking link</li>
-      <li><strong>No engagement</strong> (0 opens): alternate subjects → different send time → plain text</li>
-      <li><strong>Replied but didn't book:</strong> manual handoff, personal follow-up within 2 hours</li>
-      <li><strong>Pricing objection:</strong> ROI-focused email with cost comparison table</li>
-    </ul>
-  `},
-  {title:'🏆 Case Studies — case-study-template.md',content:`
-    <p>3 real case studies with testimonials from the LeanScale portfolio.</p>
-    <ul>
-      <li><strong>Integrate.io:</strong> 60-day Salesforce implementation. CEO quote: "Impressed by the speed, but even more impressed by how smooth and thorough the process was."</li>
-      <li><strong>Mistral:</strong> 60-day Salesforce migration + MCR tracking. Dual-track delivery, zero data loss.</li>
-      <li><strong>Clio:</strong> Multi-sprint Salesforce optimization — win rate heat maps, post-sales lifecycle, MRR reporting, SE visibility.</li>
-    </ul>
-    <p><strong>Testimonials:</strong> Radian Capital (Michael Dzik), Human (Thomas Miller), Integrate.io (Donal Tobin).</p>
-    <p><strong>Client list:</strong> Clio, Chainguard, Mistral, CB Insights, Fountain, Wealth.com, SpyCloud, AssemblyAI, + more.</p>
-  `}
+  {title:'📋 Design Document — DESIGN-DOC.md', file:'DESIGN-DOC.md'},
+  {title:'🌐 Landing Page — index.html', file:'index.html', isHtml:true},
+  {title:'📨 Outbound Sequences — outbound-sequences.md', file:'outbound-sequences.md'},
+  {title:'📅 LinkedIn Content Calendar — linkedin-content-calendar.md', file:'linkedin-content-calendar.md'},
+  {title:'📣 LinkedIn + Google Ads — linkedin-ads.md', file:'linkedin-ads.md'},
+  {title:'🤝 Partner Outreach — partner-outreach.md', file:'partner-outreach.md'},
+  {title:'📄 One-Pager — one-pager.md', file:'one-pager.md'},
+  {title:'✉️ Email Nurture — email-nurture.md', file:'email-nurture.md'},
+  {title:'🏆 Case Studies — case-study-template.md', file:'case-study-template.md'}
 ];
+
+const playbookCache = {};
 
 const playbookCard = document.getElementById('playbookCard');
 playbookCard.innerHTML = playbook.map((p, i) => `
@@ -812,12 +740,35 @@ playbookCard.innerHTML = playbook.map((p, i) => `
       <span>${p.title}</span>
       <span class="expand-arrow">▶</span>
     </div>
-    <div class="expand-body">${p.content}</div>
+    <div class="expand-body"><p class="loading-docs">Click to load document...</p></div>
   </div>
 `).join('');
 
-function toggleExpand(i) {
-  document.getElementById('exp-' + i).classList.toggle('open');
+async function toggleExpand(i) {
+  const el = document.getElementById('exp-' + i);
+  const body = el.querySelector('.expand-body');
+  const isOpening = !el.classList.contains('open');
+  el.classList.toggle('open');
+
+  if (isOpening && !playbookCache[i]) {
+    const p = playbook[i];
+    body.innerHTML = '<p class="loading-docs">Loading document...</p>';
+    try {
+      const res = await fetch(p.file);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const text = await res.text();
+      if (p.isHtml) {
+        // For HTML files, show source code
+        const escaped = text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        body.innerHTML = '<pre><code>' + escaped + '</code></pre>';
+      } else {
+        body.innerHTML = marked.parse(text);
+      }
+      playbookCache[i] = true;
+    } catch (err) {
+      body.innerHTML = '<p class="loading-docs">Could not load file: ' + p.file + ' — ' + err.message + '</p>';
+    }
+  }
 }
 
 // ===== CHECKLIST =====
